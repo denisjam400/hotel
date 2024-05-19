@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap");
+
+:root {
+  --white: #fafafa;
+  --Gold: #ffd700;
+  --Go: #daa520;
+  --black: #121212;
+  --default-color: #222;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  cursor: default;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  background: var(--black);
+  color: var(--white);
+}
+
+main {
+  position: relative;
+}
+
+.letterSpacingNeg {
+  letter-spacing: -4px;
+  color: var(--Go);
+}
+
+.icon {
+  height: 3.2vh;
+  width: 4vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.goldShadow {
+  box-shadow: 3px 3px 10px var(--Go);
+  transition: ease 0.4s;
+}
+
+.navGoldShadow {
+  box-shadow: 0px 0px 15px var(--Go);
+  transition: ease 0.4s;
+}
+
+.smGoldShadow {
+  box-shadow: 1px 1px 10px var(--Go);
+  transition: ease 0.4s;
+}
+
+.priceBanner {
+  background: linear-gradient(rgba(255, 215, 0, 0.4), rgba(255, 215, 0, 0.4));
+}
+
+.Swiper {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SwiperSlide {
+  max-height: 84%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 14px;
+  box-shadow: 1px 1px 10px var(--Go);
+  transition: ease 0.4s;
+}
+
+.goldShadow:hover {
+  scale: 1.1;
+}
+
+.hamburger {
+  font-size: 2rem;
+}
+
+.transgold {
+  background: linear-gradient(rgba(255, 215, 0, 0.9), rgba(255, 215, 0, 0.9));
+}
+
+/*  */
+@media screen and (max-width: 940px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+.imgBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../Asset/Banner/palaceroom.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.firstAboutBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
+    url(../Asset/Banner/pexels-mark-mccammon-2724749.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.secondAboutBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
+    url(../Asset/Banner/pexels-houzlook-com-3356416.jpg);
+  background-size: cover;
+  background-position: center;
+}
